@@ -10,6 +10,7 @@
     </head>
     <body class="antialiased">
         <h1>Blog Name</h1>
+        <a href="/posts/create">create</a>
         <div class='posts'>
             @Foreach($posts as $post)
                 <div class='post'>
@@ -17,9 +18,6 @@
                     <p class='body'>{{ $post->body }}</p>
                 </div>
             @endforeach
-        </div>
-         <div class='paginate'>
-            {{ $posts->links()}}
         </div>
         <div class='paginate'>{{ $posts->links()}}</div>
     </body>
